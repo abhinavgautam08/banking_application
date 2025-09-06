@@ -38,4 +38,12 @@ class Account {
             System.out.println("Withdrawal successful! Current balance: " + balance);
         }
     }
+    public void displayAccountDetails() {
+        System.out.println("\n=== Account Details ===");
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Holder Name: " + accountHolderName);
+        System.out.println("Balance: " + balance);
+        System.out.println("Email: " + email);
+        System.out.println("Phone: " + phoneNumber);
+    }
 }
