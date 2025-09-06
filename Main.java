@@ -153,4 +153,14 @@ class Account {
             acc.displayAccountDetails();
         }
     }
+    private static void updateContact() {
+        Account acc = findAccount();
+        if (acc != null) {
+            System.out.print("Enter new email: ");
+            String email = sc.nextLine();
+            System.out.print("Enter new phone number: ");
+            String phone = sc.nextLine();
+            acc.updateContactDetails(email, phone);
+        }
+    }
 }
