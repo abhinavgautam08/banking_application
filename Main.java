@@ -46,4 +46,13 @@ class Account {
         System.out.println("Email: " + email);
         System.out.println("Phone: " + phoneNumber);
     }
+    public void updateContactDetails(String email, String phoneNumber) {
+        if (isValidEmail(email) && isValidPhone(phoneNumber)) {
+            this.email = email;
+            this.phoneNumber = phoneNumber;
+            System.out.println("Contact details updated successfully.");
+        } else {
+            System.out.println("Invalid email or phone number format.");
+        }
+    }
 }
