@@ -61,7 +61,8 @@ class Account {
     private boolean isValidPhone(String phone) {
         return phone.matches("\\d{10}");
     }
-    public class Main {
+}
+class Main {
     // Data storage
     private static Account[] accounts = new Account[100];
     private static int accountCount = 0;
@@ -163,7 +164,7 @@ class Account {
             acc.updateContactDetails(email, phone);
         }
     }
-    rivate static Account findAccount() {
+    private static Account findAccount() {
         System.out.print("Enter account number: ");
         int accNum = sc.nextInt();
         sc.nextLine();
