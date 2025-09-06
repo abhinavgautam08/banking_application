@@ -20,4 +20,12 @@ class Account {
     public int getAccountNumber() {
         return accountNumber;
     }
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposit successful! Current balance: " + balance);
+        } else {
+            System.out.println("Deposit amount must be positive.");
+        }
+    }
 }
