@@ -138,4 +138,13 @@ class Account {
             acc.deposit(amount);
         }
     }
+    private static void performWithdrawal() {
+        Account acc = findAccount();
+        if (acc != null) {
+            System.out.print("Enter amount to withdraw: ");
+            double amount = sc.nextDouble();
+            sc.nextLine();
+            acc.withdraw(amount);
+        }
+    }
 }
