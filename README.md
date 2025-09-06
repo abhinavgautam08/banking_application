@@ -24,5 +24,3 @@ This is a simple command-line banking application written in Java.
 
 The application will then present you with a menu of options to choose from.
 # banking_application
-# banking_application
-# banking_application
