@@ -17,4 +17,7 @@ class Account {
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
+    public int getAccountNumber() {
+        return accountNumber;
+    }
 }
