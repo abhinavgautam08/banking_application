@@ -61,4 +61,16 @@ class Account {
     private boolean isValidPhone(String phone) {
         return phone.matches("\\d{10}");
     }
+    public class Main {
+    // Data storage
+    private static Account[] accounts = new Account[100];
+    private static int accountCount = 0;
+    private static int nextAccountNumber = 1001;
+    private static Scanner sc = new Scanner(System.in);
+
+    // Entry point
+    public static void main(String[] args) {
+        System.out.println("Welcome to the Banking Application!");
+        mainMenu();
+    }
 }
