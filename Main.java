@@ -58,4 +58,7 @@ class Account {
     private boolean isValidEmail(String email) {
         return email.contains("@") && email.contains(".");
     }
+    private boolean isValidPhone(String phone) {
+        return phone.matches("\\d{10}");
+    }
 }
