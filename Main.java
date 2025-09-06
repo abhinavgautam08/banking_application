@@ -147,4 +147,10 @@ class Account {
             acc.withdraw(amount);
         }
     }
+    private static void showAccountDetails() {
+        Account acc = findAccount();
+        if (acc != null) {
+            acc.displayAccountDetails();
+        }
+    }
 }
