@@ -55,4 +55,7 @@ class Account {
             System.out.println("Invalid email or phone number format.");
         }
     }
+    private boolean isValidEmail(String email) {
+        return email.contains("@") && email.contains(".");
+    }
 }
