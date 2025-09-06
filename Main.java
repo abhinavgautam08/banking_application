@@ -106,4 +106,27 @@ class Account {
             }
         }
     }
+    private static void createAccount() {
+        System.out.print("Enter account holder name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter initial deposit amount: ");
+        double initialDeposit = sc.nextDouble();
+        sc.nextLine();
+
+        System.out.print("Enter email address: ");
+        String email = sc.nextLine();
+
+        System.out.print("Enter phone number (10 digits): ");
+        String phone = sc.nextLine();
+
+        if (initialDeposit > 0 && email.contains("@") && phone.matches("\\d{10}")) {
+            accounts[accountCount] = new Account(nextAccountNumber, name, initialDeposit, email, phone);
+            System.out.println("Account created successfully with Account Number: " + nextAccountNumber);
+            nextAccountNumber++;
+            accountCount++;
+        } else {
+            System.out.println("Invalid input. Account creation failed.");
+        }
+    }
 }
