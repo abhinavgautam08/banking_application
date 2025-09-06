@@ -73,4 +73,37 @@ class Account {
         System.out.println("Welcome to the Banking Application!");
         mainMenu();
     }
+    private static void mainMenu() {
+        while (true) {
+            try {
+                System.out.println("\n=== Main Menu ===");
+                System.out.println("1. Create a new account");
+                System.out.println("2. Deposit money");
+                System.out.println("3. Withdraw money");
+                System.out.println("4. View account details");
+                System.out.println("5. Update contact details");
+                System.out.println("6. Exit");
+                System.out.print("Enter your choice: ");
+                int choice = sc.nextInt();
+                sc.nextLine();
+
+                // Switch menu options
+                switch (choice) {
+                    case 1 -> createAccount();
+                    case 2 -> performDeposit();
+                    case 3 -> performWithdrawal();
+                    case 4 -> showAccountDetails();
+                    case 5 -> updateContact();
+                    case 6 -> {
+                        System.out.println("Exiting... Thank you for using the Banking Application!");
+                        return;
+                    }
+                    default -> System.out.println("Invalid choice. Try again.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input. Please enter numbers only.");
+                sc.nextLine();
+            }
+        }
+    }
 }
