@@ -129,4 +129,13 @@ class Account {
             System.out.println("Invalid input. Account creation failed.");
         }
     }
+    private static void performDeposit() {
+        Account acc = findAccount();
+        if (acc != null) {
+            System.out.print("Enter amount to deposit: ");
+            double amount = sc.nextDouble();
+            sc.nextLine();
+            acc.deposit(amount);
+        }
+    }
 }
