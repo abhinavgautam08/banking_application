@@ -163,4 +163,16 @@ class Account {
             acc.updateContactDetails(email, phone);
         }
     }
+    rivate static Account findAccount() {
+        System.out.print("Enter account number: ");
+        int accNum = sc.nextInt();
+        sc.nextLine();
+        for (int i = 0; i < accountCount; i++) {
+            if (accounts[i].getAccountNumber() == accNum) {
+                return accounts[i];
+            }
+        }
+        System.out.println("Account not found.");
+        return null;
+    }
 }
