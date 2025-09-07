@@ -2,6 +2,8 @@
 
 This is a simple command-line banking application written in Java.
 
+[![Run on OnlineGDB](https://img.shields.io/badge/Run%20on-OnlineGDB-blue?logo=java&style=for-the-badge)](https://onlinegdb.com/H827FbM2t)
+
 ## Features
 
 *   Create a new bank account with an initial deposit.
@@ -23,4 +25,4 @@ This is a simple command-line banking application written in Java.
     ```
 
 The application will then present you with a menu of options to choose from.
-# banking_application
+# banking_application ([abhinavgautam08](https://github.com/abhinavgautam08))
