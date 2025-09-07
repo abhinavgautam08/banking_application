@@ -1,7 +1,7 @@
-import java.util.Scanner;
+import java.util.Scanner; //abhinavgautam08
 import java.util.InputMismatchException;
 
-
+//abhinavgautam08
 class Account {
     private int accountNumber;
     private String accountHolderName;
@@ -30,14 +30,14 @@ class Account {
     }
     public void withdraw(double amount) {
         if (amount <= 0) {
-            System.out.println("Withdrawal amount must be positive.");
+            System.out.println("Withdrawal amount must be positive.");//abhinavgautam08
         } else if (amount > balance) {
             System.out.println("Insufficient balance.");
         } else {
             balance -= amount;
-            System.out.println("Withdrawal successful! Current balance: " + balance);
+            System.out.println("Withdrawal successful! Current balance: " + balance);//abhinavgautam08
         }
-    }
+    }//abhinavgautam08
     public void displayAccountDetails() {
         System.out.println("\n=== Account Details ===");
         System.out.println("Account Number: " + accountNumber);
@@ -72,7 +72,7 @@ class Main {
     // Entry point
     public static void main(String[] args) {
         System.out.println("Welcome to the Banking Application!");
-        mainMenu();
+        mainMenu();//abhinavgautam08
     }
     private static void mainMenu() {
         while (true) {
@@ -97,18 +97,18 @@ class Main {
                     case 5 -> updateContact();
                     case 6 -> {
                         System.out.println("Exiting... Thank you for using the Banking Application!");
-                        return;
+                        return;//abhinavgautam08
                     }
-                    default -> System.out.println("Invalid choice. Try again.");
+                    default -> System.out.println("Invalid choice. Try again.");//abhinavgautam08
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter numbers only.");
-                sc.nextLine();
+                sc.nextLine();//abhinavgautam08
             }
         }
     }
     private static void createAccount() {
-        System.out.print("Enter account holder name: ");
+        System.out.print("Enter account holder name: ");//abhinavgautam08
         String name = sc.nextLine();
 
         System.out.print("Enter initial deposit amount: ");
@@ -151,7 +151,7 @@ class Main {
     private static void showAccountDetails() {
         Account acc = findAccount();
         if (acc != null) {
-            acc.displayAccountDetails();
+            acc.displayAccountDetails();//abhinavgautam08
         }
     }
     private static void updateContact() {
@@ -161,19 +161,19 @@ class Main {
             String email = sc.nextLine();
             System.out.print("Enter new phone number: ");
             String phone = sc.nextLine();
-            acc.updateContactDetails(email, phone);
+            acc.updateContactDetails(email, phone);//abhinavgautam08
         }
     }
     private static Account findAccount() {
         System.out.print("Enter account number: ");
         int accNum = sc.nextInt();
-        sc.nextLine();
+        sc.nextLine();//abhinavgautam08
         for (int i = 0; i < accountCount; i++) {
             if (accounts[i].getAccountNumber() == accNum) {
-                return accounts[i];
+                return accounts[i];//abhinavgautam08
             }
         }
         System.out.println("Account not found.");
         return null;
-    }
+    }//abhinavgautam08
 }
