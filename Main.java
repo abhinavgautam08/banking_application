@@ -40,7 +40,7 @@ class Account {
     }//abhinavgautam08
     public void displayAccountDetails() {
         System.out.println("\n=== Account Details ===");
-        System.out.println("Account Number: " + accountNumber);
+        System.out.println("AC Number: " + accountNumber);
         System.out.println("Holder Name: " + accountHolderName);
         System.out.println("Balance: " + balance);
         System.out.println("Email: " + email);
@@ -71,7 +71,7 @@ class Main {
 
     // Entry point
     public static void main(String[] args) {
-        System.out.println("Welcome to the Banking Application!");
+        System.out.println("Welcome to the Banking Application! CLI");
         mainMenu();//abhinavgautam08
     }
     private static void mainMenu() {
