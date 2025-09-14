@@ -1,4 +1,4 @@
-# Simple Banking Application
+# Banking Application
 
 This is a simple command-line banking application written in Java.
 
